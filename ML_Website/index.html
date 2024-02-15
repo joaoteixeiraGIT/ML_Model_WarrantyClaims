@@ -1,0 +1,90 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Warranty Claim</title>
+      <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+      <form id="claimForm">
+        <label for="Area">Area:</label>
+        <select id="Area" name="Area" required>
+          <option value="" disabled selected>Select an option</option>
+          <option value="Rural">Rural</option>
+          <option value="Urban">Urban</option>
+        </select>
+
+        <label for="ConsumerP">Consumer profile:</label>
+        <select id="ConsumerP" name="ConsumerP" required>
+          <option value="" disabled selected>Select an option</option>
+          <option value="Business">Business</option>
+          <option value="Personal">Personal</option>
+        </select>
+
+        <label for="ProductC">Product Category:</label>
+        <select id="ProductC" name="ProductC" required>
+          <option value="" disabled selected>Select an option</option>
+          <option value="Household">Household</option>
+          <option value="Entertainment">Entertainment</option>
+        </select>
+
+        <label for="ProductT">Product Type:</label>
+        <select id="ProductT" name="ProductT" required>
+          <option value="" disabled selected>Select an option</option>
+          <option value="TV">TV</option>
+          <option value="AC">AC</option>
+        </select>
+
+        <label for="AC_1001_ISSUE">AC_1001_ISSUE:</label>
+        <input type="text" id="AC_1001_ISSUE" name="AC_1001_ISSUE" required />
+
+        <label for="AC_1002_ISSUE">AC_1002_ISSUE:</label>
+        <input type="text" id="AC_1002_ISSUE" name="AC_1002_ISSUE" required />
+
+        <label for="AC_1003_ISSUE">AC_1003_ISSUE:</label>
+        <input type="text" id="AC_1003_ISSUE" name="AC_1003_ISSUE" required />
+
+        <label for="TV_2001_ISSUE">TV_2001_ISSUE:</label>
+        <input type="text" id="TV_2001_ISSUE" name="TV_2001_ISSUE" required />
+
+        <label for="TV_2002_ISSUE">TV_2002_ISSUE:</label>
+        <input type="text" id="TV_2002_ISSUE" name="TV_2002_ISSUE" required />
+
+        <label for="TV_2003_ISSUE">TV_2003_ISSUE:</label>
+        <input type="text" id="TV_2003_ISSUE" name="TV_2003_ISSUE" required />
+
+        <label for="ClaimValue">Claim Value:</label>
+        <input type="text" id="ClaimValue" name="ClaimValue" required />
+
+        <label for="ServiceCentre">Service Centre:</label>
+        <input type="text" id="ServiceCentre" name="ServiceCentre" required />
+
+        <label for="ProductAge">Product Age:</label>
+        <input type="text" id="ProductAge" name="ProductAge" required />
+
+        <label for="PurchasedFrom">Purchased From:</label>
+        <select id="PurchasedFrom" name="PurchasedFrom" required>
+          <option value="" disabled selected>Select an option</option>
+          <option value="Manufacturer">Manufacturer</option>
+          <option value="Dealer">Dealer</option>
+        </select>
+
+        <label for="CallDetails">Call Details:</label>
+        <input type="text" id="CallDetails" name="CallDetails" required />
+
+        <label for="Purpose">Purpose:</label>
+        <select id="Purpose" name="Purpose" required>
+          <option value="" disabled selected>Select an option</option>
+          <option value="Claim">Claim</option>
+          <option value="Complaint">Complaint</option>
+        </select>
+
+        <button type="button" onclick="predictClaim()">Predict</button>
+      </form>
+
+      <div id="predictionResult"></div>
+
+      <script src="script.js"></script>
+    </body>
+  </html>
